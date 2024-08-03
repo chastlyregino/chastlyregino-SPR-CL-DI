@@ -28,6 +28,9 @@ public class ArithmeticPresentationLayer {
 
     @Autowired
     private Adder adder;
+    @Autowired
+    //added ^ this annotation.
+    // Because without it, line 65 of this file is giving a NullPointerException. I don't understand why we need this
     private Multiplier multiplier;
     private Squarer squarer;
 
